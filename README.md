@@ -119,19 +119,7 @@ To make the inference section independent of the earlier training cells, the not
 3. Adding simple counts of disease and chemical entities from scispaCy did not improve the BioWordVec classifier.
 4. General pathological conditions (class 5) remained a challenging category, indicating that the model's performance was not uniform across all classes.
 
-## Running the notebook
-
-The notebook was developed for Google Colab. To reproduce Tasks 1–5:
-
-1. Open `CITS4012_24291627.ipynb` in Google Colab.
-2. Make the assignment CSV files available in Google Drive and update the Drive paths in the notebook to match your folder structure.
-3. Download the BioWordVec `bio_embedding_extrinsic` binary file from the source below, place it in the expected folder, and update its path if necessary.
-4. Download the scispaCy `en_ner_bc5cdr_md` model archive, place it in the expected folder, and update its path if necessary.
-5. Run the notebook cells in order for the preprocessing, embedding experiments, evaluations and NER experiment.
-
-The final inference cell is designed to run independently in a fresh Colab runtime: it reconstructs the model from the compressed payload embedded in that cell rather than retraining the model or relying on variables from previous sections. The notebook's inference interface uses `ipywidgets`.
-
-Common libraries used include Python, pandas, NumPy, NLTK, Gensim, SciPy, scikit-learn, PyTorch, spaCy and ipywidgets. Colab may already provide some of these; install any missing packages in the runtime.
+Common libraries used include Python, pandas, NumPy, NLTK, Gensim, SciPy, scikit-learn, PyTorch, spaCy and ipywidgets. 
 
 ## Methodological notes and limitations
 
